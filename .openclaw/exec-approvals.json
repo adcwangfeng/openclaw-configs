@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "socket": {
+    "path": "/Users/wangfeng/.clawdbot/exec-approvals.sock",
+    "token": "1ZTQUPz8Xveg8EN_DGarRF8tTWmh9a2O"
+  },
+  "defaults": {},
+  "agents": {}
+}

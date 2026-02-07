@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "profiles": {
+    "qwen-portal:default": {
+      "type": "oauth",
+      "provider": "qwen-portal",
+      "access": "jEIRgm-JQTp1DBPZAM3hcSloSp2oWdPRp38JL-yT2GBZaR7hxohFC75Hr5jeHZ9Hy8mF344zX7MMyMWCMolhZA",
+      "refresh": "ZGm_zTr-RlnaBtTkRFpT1A68Pyi4edN4mz-mMBEps8IudpT8r5lcGw0rG55soAMLe7WX4av7dc2zxzrZsxgWng",
+      "expires": 1770059555242
+    },
+    "qwen-portal/qwen3-max-2026-01-23:manual": {
+      "type": "token",
+      "provider": "qwen-portal/qwen3-max-2026-01-23",
+      "token": "sk-9fb75f122bba4666bca26f1ede7047e9"
+    },
+    "minimax:default": {
+      "type": "api_key",
+      "provider": "minimax",
+      "key": "sk-api-r4rZ-BZ4EfGtvmcFjcCGPEUbAyB1eEHlNIqxMEAG42TtgXh4SxhROVNwI45EwfZKHhvTHpDtULSsXMgeYuV46ZMmvbZkHMBO4tw-sAqeNRu0aWHEEQiKHRg"
+    }
+  },
+  "lastGood": {
+    "qwen-portal": "qwen-portal:default"
+  },
+  "usageStats": {
+    "qwen-portal:default": {
+      "lastUsed": 1770039716460,
+      "errorCount": 0,
+      "lastFailureAt": 1769693655805
+    }
+  }
+}

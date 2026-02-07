@@ -1,0 +1,10 @@
+{
+  "test_service": {
+    "apiKey": "test_key_12345",
+    "endpoint": "https://api.test.com"
+  },
+  "github": {
+    "username": "adcwangfeng",
+    "email": "adcwangfeng@gmail.com"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "068282da-b295-4da8-8a4f-af9ca10af89d",
+      "agentId": "main",
+      "name": "Daily System Monitoring",
+      "enabled": true,
+      "createdAtMs": 1769821822788,
+      "updatedAtMs": 1769994000038,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Running daily system monitoring. To complete email setup, please configure your email credentials in /Users/wangfeng/enhanced_system_monitor.sh as described in /Users/wangfeng/EMAIL_SETUP_INSTRUCTIONS.md"
+      },
+      "state": {
+        "nextRunAtMs": 1770512400000,
+        "lastRunAtMs": 1769994000039,
+        "lastStatus": "ok",
+        "lastDurationMs": 11
+      }
+    },
+    {
+      "id": "7f20ee49-0aed-4f46-8098-172334e677fa",
+      "agentId": "main",
+      "name": "Daily System Report Generation",
+      "enabled": true,
+      "createdAtMs": 1769821827852,
+      "updatedAtMs": 1769995800002,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 9 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Please run the enhanced system monitor script to generate and send today's report. Run: /Users/wangfeng/enhanced_system_monitor.sh"
+      },
+      "state": {
+        "nextRunAtMs": 1770514200000,
+        "lastRunAtMs": 1769995800003,
+        "lastStatus": "ok",
+        "lastDurationMs": 11
+      }
+    },
+    {
+      "id": "335ce09f-4598-4643-9f17-cb1605e72d5e",
+      "agentId": "main",
+      "name": "Daily System Report Generation v2",
+      "enabled": true,
+      "createdAtMs": 1769822520698,
+      "updatedAtMs": 1770428700008,
+      "schedule": {
+        "kind": "cron",
+        "expr": "45 9 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Please run the enhanced system monitor v2 script to generate and send today's report. Run: /Users/wangfeng/enhanced_system_monitor_v2.sh"
+      },
+      "state": {
+        "nextRunAtMs": 1770515100000,
+        "lastRunAtMs": 1770428700008,
+        "lastStatus": "ok",
+        "lastDurationMs": 45
+      }
+    },
+    {
+      "id": "e1876baf-095e-47ce-b057-e82c1d4d0ea8",
+      "agentId": "main",
+      "name": "Moltbook Status Check",
+      "enabled": true,
+      "createdAtMs": 1769991566206,
+      "updatedAtMs": 1770034768512,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 14400000
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Check Moltbook status and activity"
+      },
+      "state": {
+        "nextRunAtMs": 1770448101363,
+        "lastRunAtMs": 1770034768512,
+        "lastStatus": "ok",
+        "lastDurationMs": 13
+      }
+    }
+  ]
+}
